@@ -1,11 +1,11 @@
-Assignment
+# Assignment
 When a consumer places an order on DoorDash, we show the expected time of delivery. It is very important for DoorDash to get this right, as it has a big impact on consumer experience. In this exercise, you will build a model to predict the estimated time taken for a delivery.
 
 Concretely, for a given delivery you must predict the total delivery duration seconds , i.e., the time taken from
 
 Start: the time consumer submits the order (created_at) to
 End: when the order will be delivered to the consumer (actual_delivery_time)
-Data Description
+# Data Description
 The attached file historical_data.csv contains a subset of deliveries received at DoorDash in early 2015 in a subset of the cities. Each row in this file corresponds to one unique delivery. We have added noise to the dataset to obfuscate certain business details. Each column corresponds to a feature as explained below. Note all money (dollar) values given in the data are in cents and all time duration values given are in seconds
 
 The target value to predict here is the total seconds value between created_at and actual_delivery_time.
@@ -41,7 +41,7 @@ We have predictions from other models for various stages of delivery process tha
 
 estimated_order_place_duration: Estimated time for the restaurant to receive the order from DoorDash (in seconds)
 estimated_store_to_consumer_driving_duration: Estimated travel time between store and consumer (in seconds)
-Practicalities
+# Practicalities
 Build a model to predict the total delivery duration seconds (as defined above). Feel free to generate additional features from the given data to improve model performance. Explain:
 
 model(s) used,
